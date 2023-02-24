@@ -44,5 +44,14 @@ class MainActivity : AppCompatActivity() {
             hb3.progress = 100
             heightBar.progress = 100
         }
+
+        fun heightBars() {
+            heightBar.progress = (hb1.progress + hb2.progress + hb3.progress) / 3
+        }
+
+        fun widthBars() {
+            widthBar.progress = (wb1.progress + wb2.progress + wb3.progress) / 3
+        }
+
     }
 }
